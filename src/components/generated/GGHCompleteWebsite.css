@@ -291,3 +291,161 @@
 .gh-map-location-pin.is-visible .gh-map-pin-pulse{animation:ghMapPulse 2.5s ease-out infinite}
 @media(prefers-reduced-motion:reduce){.gh-map-location-pin,.gh-map-pin-symbol{transition:none}.gh-map-location-pin.is-visible .gh-map-pin-pulse{animation:none}}
 
+/* Type roles. Manrope stays on display and statements. DM Sans stays on reading text. */
+.gh-site.gh-cinematic{
+  --gh-quote:clamp(28px,2.5vw,40px);
+  --gh-lead:clamp(22px,1.7vw,28px);
+  --gh-body:17px;
+  --gh-support:18px;
+  --gh-ui:14px;
+  --gh-meta:12px;
+}
+.gh-site.gh-cinematic h1,
+.gh-site.gh-cinematic h2,
+.gh-site.gh-cinematic h3,
+.gh-site.gh-cinematic .gh-lead,
+.gh-site.gh-cinematic .gh-intro,
+.gh-site.gh-cinematic .gh-approach-statement p,
+.gh-site.gh-cinematic .gh-leadership-statement>p{
+  font-family:Manrope,Arial,sans-serif;
+}
+.gh-site.gh-cinematic .gh-hero-copy p,
+.gh-site.gh-cinematic .gh-page-hero p{
+  font-size:var(--gh-support);
+  line-height:1.55;
+}
+.gh-site.gh-cinematic .gh-lead,
+.gh-site.gh-cinematic .gh-intro,
+.gh-site.gh-cinematic .gh-group-grid .gh-lead,
+.gh-site.gh-cinematic .gh-industry-detail .gh-intro{
+  font-size:var(--gh-lead);
+  font-weight:500;
+  line-height:1.35;
+  letter-spacing:-.02em;
+}
+.gh-site.gh-cinematic .gh-approach-statement p,
+.gh-site.gh-cinematic .gh-leadership-statement>p{
+  font-size:var(--gh-quote);
+  font-weight:500;
+  line-height:1.15;
+  letter-spacing:-.03em;
+}
+.gh-site.gh-cinematic .gh-leadership-statement>p{max-width:14em}
+.gh-site.gh-cinematic .gh-group-grid p,
+.gh-site.gh-cinematic .gh-editorial>div>p,
+.gh-site.gh-cinematic .gh-editorial>p,
+.gh-site.gh-cinematic .gh-card-content p,
+.gh-site.gh-cinematic .gh-sector-panel p,
+.gh-site.gh-cinematic .gh-approach-grid>div>p,
+.gh-site.gh-cinematic .gh-principles p,
+.gh-site.gh-cinematic .gh-leadership-copy>p,
+.gh-site.gh-cinematic .gh-leadership-detail>p,
+.gh-site.gh-cinematic .gh-partnership-content>p,
+.gh-site.gh-cinematic .gh-purpose-grid p,
+.gh-site.gh-cinematic .gh-services-grid p,
+.gh-site.gh-cinematic .gh-industry-detail p:not(.gh-intro),
+.gh-site.gh-cinematic .gh-page-cta p,
+.gh-site.gh-cinematic .gh-contact-page aside>p,
+.gh-site.gh-cinematic .gh-investment-heading>div>p,
+.gh-site.gh-cinematic .gh-investment-thesis p,
+.gh-site.gh-cinematic .gh-contact-bottom p,
+.gh-site.gh-cinematic .gh-section-heading>p,
+.gh-site.gh-cinematic .gh-business-foot p{
+  font-size:var(--gh-body);
+  line-height:1.65;
+}
+.gh-site.gh-cinematic .gh-kicker,
+.gh-site.gh-cinematic .gh-hero .gh-kicker,
+.gh-site.gh-cinematic .gh-page-hero .gh-kicker,
+.gh-site.gh-cinematic .gh-page-cta .gh-kicker,
+.gh-site.gh-cinematic .gh-section-label>.gh-kicker,
+.gh-site.gh-cinematic .gh-section-label>span:last-child:not(.gh-kicker),
+.gh-site.gh-cinematic .gh-leadership-eyebrow>span,
+.gh-site.gh-cinematic .gh-leadership-eyebrow .gh-kicker,
+.gh-site.gh-cinematic .gh-investment-top>span,
+.gh-site.gh-cinematic .gh-approach-statement>span,
+.gh-site.gh-cinematic .gh-leadership-statement>small,
+.gh-site.gh-cinematic .gh-card-content>span,
+.gh-site.gh-cinematic .gh-contact-information h3,
+.gh-site.gh-cinematic .gh-footer h3,
+.gh-site.gh-cinematic .gh-company-facts dt,
+.gh-site.gh-cinematic .gh-breadcrumb,
+.gh-site.gh-cinematic .gh-scroll,
+.gh-site.gh-cinematic .gh-group-fact-text>span,
+.gh-site.gh-cinematic .gh-business-foot>span,
+.gh-site.gh-cinematic .gh-industry-visual>div>span,
+.gh-site.gh-cinematic .gh-leadership-signoff,
+.gh-site.gh-cinematic .gh-investment-sectors small,
+.gh-site.gh-cinematic .gh-visual-index,
+.gh-site.gh-cinematic .gh-principles>div>span,
+.gh-site.gh-cinematic .gh-industry-accordion button>span{
+  font-size:var(--gh-meta);
+  letter-spacing:.14em;
+  line-height:1.4;
+}
+.gh-site.gh-cinematic .gh-sector-rail b,
+.gh-site.gh-cinematic .gh-industry-visual p{
+  font-size:var(--gh-ui);
+  letter-spacing:.04em;
+}
+.gh-site.gh-cinematic .gh-nav,
+.gh-site.gh-cinematic .gh-dropdown>button,
+.gh-site.gh-cinematic .gh-button,
+.gh-site.gh-cinematic .gh-text-link,
+.gh-site.gh-cinematic .gh-footer a,
+.gh-site.gh-cinematic .gh-footer button,
+.gh-site.gh-cinematic .gh-footer address,
+.gh-site.gh-cinematic .gh-footer-base,
+.gh-site.gh-cinematic .gh-footer-base a,
+.gh-site.gh-cinematic .gh-form-grid label,
+.gh-site.gh-cinematic .gh-hero-sector-controls button,
+.gh-site.gh-cinematic .gh-sector-tabs button,
+.gh-site.gh-cinematic .gh-card-content>div,
+.gh-site.gh-cinematic .gh-capability-link,
+.gh-site.gh-cinematic .gh-group-facts p,
+.gh-site.gh-cinematic .gh-group-facts .gh-group-fact-text p,
+.gh-site.gh-cinematic .gh-company-facts dd,
+.gh-site.gh-cinematic .gh-contact-information a,
+.gh-site.gh-cinematic .gh-contact-information address{
+  font-size:var(--gh-ui);
+  line-height:1.45;
+}
+.gh-site.gh-cinematic .gh-form-grid input,
+.gh-site.gh-cinematic .gh-form-grid textarea,
+.gh-site.gh-cinematic .gh-form-grid select,
+.gh-site.gh-cinematic .gh-form-grid input::placeholder,
+.gh-site.gh-cinematic .gh-form-grid textarea::placeholder,
+.gh-site.gh-cinematic .gh-email-review>textarea{
+  font-size:16px;
+}
+.gh-site.gh-cinematic .gh-footer-brand p{font-size:20px;line-height:1.35;letter-spacing:-.02em}
+.gh-site.gh-cinematic .gh-footer-brand>span{font-size:var(--gh-meta);letter-spacing:.14em}
+.gh-site.gh-cinematic .gh-leadership-portrait figcaption>p,
+.gh-site.gh-cinematic .gh-leadership-portrait figcaption>span{font-size:var(--gh-ui)}
+.gh-site.gh-cinematic .gh-leadership-portrait figcaption>b{font-size:26px}
+.gh-site.gh-cinematic .gh-map-labels text,
+.gh-site.gh-cinematic .gh-map-region-list,
+.gh-site.gh-cinematic .gh-map-region-list>button,
+.gh-site.gh-cinematic .gh-contact-map-card .gh-map-region-list button,
+.gh-site.gh-cinematic .gh-contact-map-card .gh-map-heading>span,
+.gh-site.gh-cinematic .gh-contact-details-row .gh-map-region-list button{font-size:12px}
+.gh-site.gh-cinematic .gh-map-labels .gh-map-hq-label,
+.gh-site.gh-cinematic .gh-contact-map-card .gh-map-heading>small,
+.gh-site.gh-cinematic .gh-map-selection .gh-map-selection-detail{font-size:11px}
+
+/* Navy band under the header runs edge to edge. Content inset stays aligned with the header. */
+.gh-site.gh-cinematic .gh-hero,
+.gh-site.gh-cinematic .gh-sector-rail,
+.gh-site.gh-cinematic.gh-cinematic-home .gh-group.gh-container{
+  width:100%;
+  max-width:none;
+  margin-left:0;
+  margin-right:0;
+  border-radius:0;
+}
+@media(max-width:800px){
+  .gh-site.gh-cinematic{--gh-quote:clamp(26px,7vw,34px);--gh-lead:22px;--gh-body:16px;--gh-support:16px;--gh-ui:15px}
+  .gh-site.gh-cinematic .gh-nav>a:not(.gh-nav-cta),
+  .gh-site.gh-cinematic .gh-dropdown>button{font-size:16px}
+}
+
